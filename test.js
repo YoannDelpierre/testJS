@@ -5,8 +5,6 @@ function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
   var dLat = deg2rad(lat2-lat1);  // deg2rad below
   var dLon = deg2rad(lon2-lon1); 
 
-  console.log(lat1, lon1, lat2, lon2);
-
   var a = 
     Math.sin(dLat/2) * Math.sin(dLat/2) +
     Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
